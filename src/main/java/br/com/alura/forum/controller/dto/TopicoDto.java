@@ -1,10 +1,9 @@
 package br.com.alura.forum.controller.dto;
 
-import java.time.LocalDateTime;
-
+import br.com.alura.forum.modelo.Topico;
 import org.springframework.data.domain.Page;
 
-import br.com.alura.forum.modelo.Topico;
+import java.time.LocalDateTime;
 
 public class TopicoDto {
 
@@ -12,7 +11,7 @@ public class TopicoDto {
 	private String titulo;
 	private String mensagem;
 	private LocalDateTime dataCriacao;
-
+	
 	public TopicoDto(Topico topico) {
 		this.id = topico.getId();
 		this.titulo = topico.getTitulo();
